@@ -1,2 +1,2 @@
 # calculadoraAngular
-Calculadora feita com Angular, TypeScript e Bootstrap
+Angular, TypeScript e Bootstrap
