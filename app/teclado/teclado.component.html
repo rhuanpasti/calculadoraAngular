@@ -1,0 +1,106 @@
+<div class="container">
+<div class="row mt-3">
+    <h3 style="margin-top:2%;">
+        Calculadora Digital
+     </h3>
+    <div class="col-md-12" style="margin-bottom:2%">
+        <form>
+            <div class="form-group">
+                <input type="text" [value]="resultado" [(ngModel)]="resultado" class="form-control" id="resultado" readonly="readonly">
+            </div>
+
+        </form>
+    </div>
+    <table style="table">   
+        <tr>
+            <td>
+        <button type="button" (click)="clicar('0')" class="btn btn-primary"style=" width:100%;margin:2px" >
+            0
+        </button>
+            </td><td>
+        <button type="button" (click)="clicar('1')" class="btn btn-primary" style=" width:100%;margin:2px">
+            1
+        </button>
+            </td><td>
+        <button type="button" (click)="clicar('2')" class="btn btn-primary" style=" width:100%;margin:2px">
+            2
+        </button>
+            <td>
+        <button type="button" (click)="clicar('*')"  class="btn btn-secondary"style=" width:100%;margin:2px">
+            *
+        </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <button type="button" (click)="clicar('3')" class="btn btn-primary"style=" width:100%;margin:2px">
+            3
+        </button>
+            </td><td>
+        <button type="button" (click)="clicar('4')" class="btn btn-primary"style=" width:100%;margin:2px">
+            4
+        </button>
+            </td><td>
+        <button type="button" (click)="clicar('5')" class="btn btn-primary"style=" width:100%;margin:2px">
+            5
+        </button>
+            <td>
+        <button type="button" (click)="clicar('/')" class="btn btn-secondary"style=" width:100%;margin:2px">
+            /
+        </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <button type="button" (click)="clicar('6')" class="btn btn-primary"style=" width:100%;margin:2px">
+            6
+        </button>
+            </td><td>
+        <button type="button" (click)="clicar('7')" class="btn btn-primary"style=" width:100%;margin:2px">
+            7
+        </button>
+            </td><td>
+        <button type="button" (click)="clicar('8')" class="btn btn-primary" style=" width:100%;margin:2px">
+            8
+        </button>
+            <td>
+        <button type="button" (click)="clicar('-')"  class="btn btn-secondary" style=" width:100%;margin:2px">
+            -
+        </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <button type="button" (click)="clicar('9')" class="btn btn-primary"style=" width:100%;margin:2px">
+            9
+        </button>
+            </td><td>
+        <button type="button" (click)="limpar()" class="btn btn-secondary"style=" width:100%;margin:2px">
+            CE
+        </button>
+            </td><td>
+        <button type="button" (click)="finalizar()" class="btn btn-danger"style=" width:100%;margin:2px">
+            =
+        </button>
+            <td>
+        <button type="button" (click)="clicar('+')" class="btn btn-secondary"style=" width:100%;margin:2px">
+            +
+        </button>
+            </td>
+        </tr>
+        </table>
+
+    <div class="row mt-3">
+    <div class="col-md-12" style="margin-bottom:2%">
+        <button type="button" (click)="limpar()"  routerLink="/menu" class="btn btn-success"style=" width:100%;margin:2px">
+         Voltar para o menu
+         
+        </button>
+    </div>
+        
+        
+        
+</div>
+</div>
+<router-outlet></router-outlet>
+
